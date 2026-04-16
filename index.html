@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bishal Ghosh — Full Stack Developer</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+
+
+    <!-- Stars -->
+    <div id="stars"></div>
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+        <a href="#home" class="nav-logo">BG<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#" class="nav-resume">Download CV</a>
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home" onclick="closeMobile()">Home</a>
+        <a href="#about" onclick="closeMobile()">About</a>
+        <a href="#experience" onclick="closeMobile()">Experience</a>
+        <a href="#skills" onclick="closeMobile()">Skills</a>
+        <a href="#projects" onclick="closeMobile()">Projects</a>
+        <a href="#contact" onclick="closeMobile()">Contact</a>
+    </div>
+
+    <!-- HERO -->
+    <section id="home">
+        <div class="hero-inner">
+            <div class="hero-left fade-in">
+                <div class="hero-tag">Available for opportunities</div>
+                <p class="hero-greeting">Hi, I'm 👋</p>
+                <h1 class="hero-name"><span>Bishal</span> Ghosh</h1>
+                <p class="hero-role">
+                    <span class="typed-text" id="typedText"></span><span class="cursor-blink">|</span>
+                </p>
+                <p class="hero-bio">
+                    Final-year B.Tech CSE student at Haldia Institute of Technology. Specializing in
+                    <strong>full-stack MERN development</strong> with two industry internships including
+                    <strong>C-DAC</strong>. Passionate about building real-time, scalable web applications.
+                </p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn-primary">
+                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                        </svg>
+                        View My Work
+                    </a>
+                    <a href="https://github.com/ItsGBishal" target="_blank" class="btn-outline">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                        </svg>
+                        GitHub Profile
+                    </a>
+                </div>
+            </div>
+            <div class="hero-photo-wrap fade-in" style="animation-delay:0.2s">
+                <div class="orbit">
+                    <div class="orbit-icon">⚛️</div>
+                    <div class="orbit-icon">🟢</div>
+                    <div class="orbit-icon">🍃</div>
+                    <div class="orbit-icon">☕</div>
+                </div>
+                <div class="hero-photo-ring">
+                    <div class="hero-photo">BG</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="about-grid fade-in">
+            <div class="about-photo-wrap">
+                <div class="about-photo">
+                    BG
+                    <div class="about-photo-corner tl"></div>
+                    <div class="about-photo-corner br"></div>
+                </div>
+            </div>
+            <div class="about-text">
+                <div class="section-label">About Me</div>
+                <h2 class="section-title">Who I <span>Am</span></h2>
+                <div class="section-line"></div>
+                <p>I'm <strong>Bishal Ghosh</strong>, a final-year B.Tech Computer Science student at <strong>Haldia
+                        Institute of Technology, West Bengal</strong>. I specialize in full-stack MERN development and
+                    have hands-on industry experience from two internships — including one at <strong>C-DAC</strong>.
+                </p>
+                <p>I build real-time, authenticated web applications from responsive UI design to RESTful API
+                    development and MongoDB schema optimization. Currently maintaining a CGPA of
+                    <strong>7.61/10</strong> while continuously growing my skills in DSA and system design.
+                </p>
+                <p>When I'm not coding, I'm solving DSA problems, contributing to projects, or exploring new backend
+                    patterns.</p>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-num">3+</div>
+                        <div class="stat-label">Full Stack Projects</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-num">2</div>
+                        <div class="stat-label">Industry Internships</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-num">7+</div>
+                        <div class="stat-label">Technologies</div>
+                    </div>
+                </div>
+                <a href="#" class="btn-primary" style="width:fit-content">
+                    <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" />
+                    </svg>
+                    Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+        <div style="max-width:1100px;margin:0 auto;">
+            <div class="section-label fade-in">Professional Journey</div>
+            <h2 class="section-title fade-in">Work <span>Experience</span></h2>
+            <div class="section-line fade-in"></div>
+            <div class="exp-grid">
+                <div class="exp-card fade-in">
+                    <div class="exp-header">
+                        <div>
+                            <div class="exp-role">Full Stack Web Developer Intern</div>
+                            <div class="exp-company">Capsitech</div>
+                        </div>
+                        <span class="exp-date">Jul 2025 – Aug 2025</span>
+                    </div>
+                    <ul class="exp-bullets">
+                        <li>Delivered 10+ responsive web pages using HTML5, CSS3, and Tailwind CSS with full
+                            cross-device compatibility across mobile and desktop breakpoints.</li>
+                        <li>Built a reusable React.js component library integrated with REST APIs, reducing code
+                            duplication by ~25% and cutting development time for new pages.</li>
+                        <li>Improved frontend performance through lazy loading and component refactoring, measurably
+                            reducing initial bundle size and page load time.</li>
+                    </ul>
+                </div>
+                <div class="exp-card fade-in">
+                    <div class="exp-header">
+                        <div>
+                            <div class="exp-role">Software Development Intern</div>
+                            <div class="exp-company">C-DAC (Centre for Development of Advanced Computing)</div>
+                        </div>
+                        <span class="exp-date">Jan 2025 – Feb 2025</span>
+                    </div>
+                    <ul class="exp-bullets">
+                        <li>Architected and deployed a production-grade full-stack authentication system (React.js,
+                            Node.js, MongoDB) with JWT-based secure login, registration, and session management.</li>
+                        <li>Designed and implemented 5+ RESTful API endpoints with comprehensive input validation,
+                            structured error responses, and role-based access control.</li>
+                        <li>Optimized MongoDB schemas with compound indexing strategies, reducing average query time for
+                            user lookups and improving data retrieval scalability.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <div class="skills-container fade-in">
+            <div class="section-label">What I Work With</div>
+            <h2 class="section-title">Tech <span>Stack</span></h2>
+            <div class="section-line"></div>
+            <div class="skill-group">
+                <div class="skill-group-title">Languages</div>
+                <div class="skills-grid">
+                    <div class="skill-badge"><span class="skill-icon">☕</span> Java</div>
+                    <div class="skill-badge"><span class="skill-icon">🟡</span> JavaScript (ES6+)</div>
+                    <div class="skill-badge"><span class="skill-icon">🔷</span> TypeScript</div>
+                    <div class="skill-badge"><span class="skill-icon">🐍</span> Python</div>
+                </div>
+            </div>
+            <div class="skill-group">
+                <div class="skill-group-title">Frontend</div>
+                <div class="skills-grid">
+                    <div class="skill-badge"><span class="skill-icon">⚛️</span> React.js</div>
+                    <div class="skill-badge"><span class="skill-icon">🌐</span> HTML5</div>
+                    <div class="skill-badge"><span class="skill-icon">🎨</span> CSS3</div>
+                    <div class="skill-badge"><span class="skill-icon">💨</span> Tailwind CSS</div>
+                    <div class="skill-badge"><span class="skill-icon">📱</span> Responsive Design</div>
+                </div>
+            </div>
+            <div class="skill-group">
+                <div class="skill-group-title">Backend</div>
+                <div class="skills-grid">
+                    <div class="skill-badge"><span class="skill-icon">🟢</span> Node.js</div>
+                    <div class="skill-badge"><span class="skill-icon">🚀</span> Express.js</div>
+                    <div class="skill-badge"><span class="skill-icon">🔌</span> REST API</div>
+                    <div class="skill-badge"><span class="skill-icon">⚡</span> WebSockets</div>
+                    <div class="skill-badge"><span class="skill-icon">🔐</span> JWT Auth</div>
+                    <div class="skill-badge"><span class="skill-icon">🍃</span> MongoDB</div>
+                    <div class="skill-badge"><span class="skill-icon">🐬</span> MySQL</div>
+                </div>
+            </div>
+            <div class="skill-group">
+                <div class="skill-group-title">Tools & Platforms</div>
+                <div class="skills-grid">
+                    <div class="skill-badge"><span class="skill-icon">🐙</span> Git & GitHub</div>
+                    <div class="skill-badge"><span class="skill-icon">📮</span> Postman</div>
+                    <div class="skill-badge"><span class="skill-icon">▲</span> Vercel</div>
+                    <div class="skill-badge"><span class="skill-icon">🎨</span> VS Code</div>
+                    <div class="skill-badge"><span class="skill-icon">🔧</span> npm</div>
+                    <div class="skill-badge"><span class="skill-icon">☁️</span> Render</div>
+                </div>
+            </div>
+            <div class="skill-group">
+                <div class="skill-group-title">Concepts</div>
+                <div class="skills-grid">
+                    <div class="skill-badge"><span class="skill-icon">🧠</span> Data Structures</div>
+                    <div class="skill-badge"><span class="skill-icon">🔢</span> Algorithms</div>
+                    <div class="skill-badge"><span class="skill-icon">🏗️</span> OOP</div>
+                    <div class="skill-badge"><span class="skill-icon">🌐</span> Computer Networks</div>
+                    <div class="skill-badge"><span class="skill-icon">⚙️</span> Agile</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div class="projects-container">
+            <div class="section-label fade-in">What I've Built</div>
+            <h2 class="section-title fade-in">My <span>Work</span></h2>
+            <div class="section-line fade-in"></div>
+            <div class="filter-btns fade-in">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+            </div>
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Cards rendered by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION TIMELINE -->
+    <section id="education">
+        <div style="max-width:1100px;margin:0 auto;">
+            <div class="section-label fade-in">Academic Background</div>
+            <h2 class="section-title fade-in"><span>Education</span></h2>
+            <div class="section-line fade-in"></div>
+            <div class="timeline fade-in">
+                <div class="tl-item">
+                    <div class="tl-content">
+                        <div class="tl-dot"></div>
+                        <div class="tl-year">2022 – 2026</div>
+                        <div class="tl-title">B.Tech in Computer Science Engineering</div>
+                        <div class="tl-sub">Haldia Institute of Technology, West Bengal</div>
+                        <span class="tl-badge">CGPA: 7.61 / 10.0</span>
+                    </div>
+                    <div class="tl-empty"></div>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-empty"></div>
+                    <div class="tl-content">
+                        <div class="tl-dot"></div>
+                        <div class="tl-year">Higher Secondary</div>
+                        <div class="tl-title">Class XII — Science</div>
+                        <div class="tl-sub">WBCHSE, West Bengal</div>
+                        <span class="tl-badge">90%</span>
+                    </div>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-content">
+                        <div class="tl-dot"></div>
+                        <div class="tl-year">Secondary</div>
+                        <div class="tl-title">Class X</div>
+                        <div class="tl-sub">WBBSE, West Bengal</div>
+                        <span class="tl-badge">82.71%</span>
+                    </div>
+                    <div class="tl-empty"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certs">
+        <div style="max-width:1100px;margin:0 auto;">
+            <div class="section-label fade-in">Credentials</div>
+            <h2 class="section-title fade-in"><span>Certifications</span></h2>
+            <div class="section-line fade-in"></div>
+            <div class="certs-grid fade-in">
+                <div class="cert-card">
+                    <div class="cert-icon">🤖</div>
+                    <div>
+                        <div class="cert-name">Oracle Certified Foundations Associate</div>
+                        <div class="cert-issuer">Oracle — AI Foundations</div>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">🏦</div>
+                    <div>
+                        <div class="cert-name">Software Engineering Virtual Experience</div>
+                        <div class="cert-issuer">JPMorgan Chase & Co. — Forage</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div style="max-width:1100px;margin:0 auto;">
+            <div class="section-label fade-in">Get In Touch</div>
+            <h2 class="section-title fade-in">Contact <span>Me</span></h2>
+            <div class="section-line fade-in"></div>
+            <div class="contact-grid fade-in">
+                <div class="contact-info">
+                    <h3>Let's work together</h3>
+                    <p>I'm currently open to full-time roles, internships, and freelance projects. Whether you have a
+                        project idea or just want to connect — feel free to reach out!</p>
+                    <div class="contact-links">
+                        <a href="mailto:ghoshbishal9641@gmail.com" class="contact-link">
+                            <div class="contact-link-icon">📧</div>
+                            ghoshbishal9641@gmail.com
+                        </a>
+                        <a href="https://linkedin.com/in/bishal-ghosh" target="_blank" class="contact-link">
+                            <div class="contact-link-icon">💼</div>
+                            linkedin.com/in/bishal-ghosh
+                        </a>
+                        <a href="https://github.com/ItsGBishal" target="_blank" class="contact-link">
+                            <div class="contact-link-icon">🐙</div>
+                            github.com/ItsGBishal
+                        </a>
+                        <a href="tel:+919641309123" class="contact-link">
+                            <div class="contact-link-icon">📱</div>
+                            +91 9641 309 123
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-field">
+                        <label>Your Name</label>
+                        <input type="text" placeholder="John Doe" required />
+                    </div>
+                    <div class="form-field">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="john@example.com" required />
+                    </div>
+                    <div class="form-field">
+                        <label>Message</label>
+                        <textarea placeholder="Tell me about your project or opportunity..." required></textarea>
+                    </div>
+                    <button type="submit" class="form-submit">Send Message ✦</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-copy">
+            © 2025 <span>Bishal Ghosh</span> — Built with ♥ and lots of ☕
+        </div>
+        <div class="footer-socials">
+            <a href="https://github.com/ItsGBishal" target="_blank" class="footer-social" title="GitHub">
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+            </a>
+            <a href="https://linkedin.com/in/bishal-ghosh" target="_blank" class="footer-social" title="LinkedIn">
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+            </a>
+            <a href="mailto:ghoshbishal9641@gmail.com" class="footer-social" title="Email">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                    <path d="M22 7l-10 7L2 7" />
+                </svg>
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
