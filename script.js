@@ -1,5 +1,3 @@
-
-
         // ── STARS ──
         const starsEl = document.getElementById('stars');
         for (let i = 0; i < 120; i++) {
