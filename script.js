@@ -100,7 +100,7 @@
         // Try fetching from backend, fallback to static
         async function loadProjects(filter = 'all') {
             try {
-                const res = await fetch('http://localhost:3000/api/projects');
+                const res = await fetch('https://vercel-backend-five-beta.vercel.app/api/projects');
                 if (!res.ok) throw new Error();
                 const data = await res.json();
                 if (data.length === 0) throw new Error();
@@ -143,7 +143,7 @@
             const btn = e.target.querySelector('.form-submit');
             btn.textContent = 'Sending...';
             try {
-                await fetch('http://localhost:3000/api/contact', {
+                await fetch('https://vercel-backend-five-beta.vercel.app/api/contact', {
                     method: 'POST', headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ name: e.target[0].value, email: e.target[1].value, message: e.target[2].value })
                 });
