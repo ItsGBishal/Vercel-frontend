@@ -45,8 +45,7 @@
                 category: 'fullstack',
                 emoji: '💬',
                 bg: 'linear-gradient(135deg,#0d2137,#1a3a5c)',
-                github: 'https://github.com/ItsGBishal/Full-Stack-Chat-Application-',
-                live: 'https://render.com'
+                github: 'https://github.com/ItsGBishal/Full-Stack-Chat-Application-'
             },
             {
                 title: 'Note Taking Application',
@@ -55,8 +54,7 @@
                 category: 'fullstack',
                 emoji: '📝',
                 bg: 'linear-gradient(135deg,#0d2137,#1a2d1a)',
-                github: 'https://github.com/ItsGBishal/NoteApp',
-                live: 'https://vercel.com'
+                github: 'https://github.com/ItsGBishal/NoteApp'
             },
             {
                 title: 'E-Commerce UI (Amazon Clone)',
